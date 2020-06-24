@@ -26,6 +26,9 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatBottomSheetModule} from '@angular/material/bottom-sheet';
 import {MatStepperModule} from '@angular/material/stepper';
 import { TasksComponent } from './tasks/tasks.component';
+import { Task2Component } from './task2/task2.component';
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatCardModule} from '@angular/material/card';
 
 
 const router : AppRoutingModule=[
@@ -35,7 +38,8 @@ const router : AppRoutingModule=[
   declarations: [
     AppComponent,
     FilterPipe,
-    TasksComponent
+    TasksComponent,
+    Task2Component
    // ReactiveFormsModule
   ],
   imports: [
@@ -58,7 +62,10 @@ const router : AppRoutingModule=[
   MatTableModule,
   MatGridListModule,
   MatBottomSheetModule,
-  MatStepperModule
+  MatStepperModule,
+  MatToolbarModule,
+  MatCardModule
+
    // FilterPipe
    
    // RouterModule.forRoot(router)

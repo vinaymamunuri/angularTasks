@@ -81,3 +81,32 @@
            (change)="handleFileInput($event.target.files)"
            style="margin-left:15px;">
 </div>
+
+<input type="file" accept="image/*" (change)="changeListener($event)">
+
+<button class="btn btn-primary" (click)="getDetails()">Upload</button>
+
+<h3 style="margin-top: 50px;"> //directives </h3>
+   <h3> //ngfor</h3>
+   <div *ngFor="let color of names let i = index" >
+
+     {{i}} {{color}}
+
+
+   </div> 
+
+   <button (click)="hideContent()">show</button>
+
+
+   
+   <h4 *ngIf="show">
+      hello
+   </h4>
+
+   <div [ngClass]="{ 'hello': show}">
+      <h1>ng class example</h1>
+   </div>
+
+   <div [ngStyle]="{ 'width.px':200 ,'background':'red','height.px':200}">
+      ng style example 
+   </div>

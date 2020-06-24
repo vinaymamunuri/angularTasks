@@ -11,5 +11,11 @@ export class AppServices{
     ){}
 
     //public serverUrl = environment.serverUrl;
+
+    //http://dummy.restapiexample.com/
+
+    getData(){
+       return this.http.get("http://dummy.restapiexample.com/",{responseType: 'text' as 'json' } ) 
+    }
     
 }
