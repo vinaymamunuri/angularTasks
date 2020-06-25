@@ -2,7 +2,7 @@
   body{
       background-color: blueviolet;
       margin: 0px;
-  /* }
+  }
   mat-grid-tile {
     background: lightblue;
   }
@@ -19,7 +19,7 @@
         nav{
             display: inline-block;
         }
- */
+
     }
 /* } */
 
