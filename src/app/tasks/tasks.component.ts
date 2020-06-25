@@ -83,9 +83,9 @@ console.log( " files ", files)
 changeListener($event){
    var file:File = $event.target.files[0];
    var myReader:FileReader = new FileReader();
-
    myReader.onloadend = () => {
      this.image = myReader.result;
+     console.log(" image  - - -> ", this.image)
    }
    myReader.readAsDataURL(file);
  }
