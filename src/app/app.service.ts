@@ -15,7 +15,7 @@ export class AppServices{
     //http://dummy.restapiexample.com/
 
     getData(){
-       return this.http.get("http://dummy.restapiexample.com/",{responseType: 'text' as 'json' } ) 
+       return this.http.get("http://www.omdbapi.com/?i=tt3896198&apikey=a9e6f133&s=jurassic&page=1") 
     }
     
 }

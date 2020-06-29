@@ -29,6 +29,7 @@ import { TasksComponent } from './tasks/tasks.component';
 import { Task2Component } from './task2/task2.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
+import { MoviessearchComponent } from './moviessearch/moviessearch.component';
 
 
 const router : AppRoutingModule=[
@@ -39,7 +40,8 @@ const router : AppRoutingModule=[
     AppComponent,
     FilterPipe,
     TasksComponent,
-    Task2Component
+    Task2Component,
+    MoviessearchComponent
    // ReactiveFormsModule
   ],
   imports: [
