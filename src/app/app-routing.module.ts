@@ -10,7 +10,11 @@ MoviessearchComponent
 const routes: Routes = [
   {path :'tasks' , component : TasksComponent},
   {path : 'task2' , component: Task2Component},
-  {path : 'movies', component: MoviessearchComponent}
+  {path : 'movies', component: MoviessearchComponent},
+  { path: '#', component: TasksComponent, children: [
+    { path: 'task2', component: Task2Component },
+    { path: 'movies', component:MoviessearchComponent }
+  ] }
 ];
 
 @NgModule({

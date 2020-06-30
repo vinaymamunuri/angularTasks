@@ -30,6 +30,7 @@ import { Task2Component } from './task2/task2.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import { MoviessearchComponent } from './moviessearch/moviessearch.component';
+import {MatDialogModule} from '@angular/material/dialog';
 
 
 const router : AppRoutingModule=[
@@ -66,8 +67,8 @@ const router : AppRoutingModule=[
   MatBottomSheetModule,
   MatStepperModule,
   MatToolbarModule,
-  MatCardModule
-
+  MatCardModule,
+  MatDialogModule
    // FilterPipe
    
    // RouterModule.forRoot(router)
