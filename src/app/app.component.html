@@ -6,7 +6,7 @@
 <!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
 <!-- JS, Popper.js, and jQuery -->
@@ -34,23 +34,29 @@
       <li class="nav-item active">
         <a class="nav-link" routerLink='/movies'>Moviessearch<span class="sr-only">(current)</span></a>
       </li>
+      <li class="nav-item active">
+        <a class="nav-link" routerLink='/udemy'>Udemy<span class="sr-only">(current)</span></a>
+      </li>
+ 
+      <li class="nav-item active">
+        <a class="nav-link" routerLink='/dynamic'>Dynamic Routing<span class="sr-only">(current)</span></a>
+      </li>
       <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown">
-          Services
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="/task2">Action</a>
-          <a class="dropdown-item" href="/movies">Another action</a>
-          <!-- <a class="dropdown-item" href="#">Something else here</a> -->
-        </div>
+        <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+          aria-expanded="false">ng concept <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a routerLink="/ngconcept/ngif">Ng If</a></li>
+          <li><a routerLink="/ngconcept/ngstyle">Ng For</a></li>
+        </ul>
       </li>
     </ul>
   </div>
 </nav>
 
-  <router-outlet></router-outlet>
+<!-- <app-tasks [(fname)]="list"></app-tasks>  -->
+  <router-outlet ></router-outlet>
 
- 
+  
 
 
 

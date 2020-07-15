@@ -19,6 +19,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import {MatCheckboxModule} from '@angular/material/checkbox';
 
 import {MatSortModule} from '@angular/material/sort';
 import {MatTableModule} from '@angular/material/table';
@@ -31,6 +32,12 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatCardModule} from '@angular/material/card';
 import { MoviessearchComponent } from './moviessearch/moviessearch.component';
 import {MatDialogModule} from '@angular/material/dialog';
+import { UdemyComponent } from './udemy/udemy.component';
+import { DirectivesComponent } from './directives/directives.component';
+import { DynamicroutingComponent } from './dynamicrouting/dynamicrouting.component';
+import { DynamicroutingdataComponent } from './dynamicroutingdata/dynamicroutingdata.component';
+// import { NgIfComponent } from './directives/ng-if/ng-if.component';
+// import { NgForComponent } from './directives/ng-for/ng-for.component';
 
 
 const router : AppRoutingModule=[
@@ -42,7 +49,13 @@ const router : AppRoutingModule=[
     FilterPipe,
     TasksComponent,
     Task2Component,
-    MoviessearchComponent
+    MoviessearchComponent,
+    UdemyComponent,
+    DirectivesComponent,
+    DynamicroutingComponent,
+    DynamicroutingdataComponent,
+    // NgIfComponent,
+    // NgForComponent
    // ReactiveFormsModule
   ],
   imports: [
@@ -68,7 +81,9 @@ const router : AppRoutingModule=[
   MatStepperModule,
   MatToolbarModule,
   MatCardModule,
-  MatDialogModule
+  MatDialogModule,
+ MatCheckboxModule
+
    // FilterPipe
    
    // RouterModule.forRoot(router)

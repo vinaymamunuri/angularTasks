@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { FormBuilder, FormGroup, FormArray } from '@angular/forms';
 import { AppServices } from '../app.service';
 
@@ -14,6 +14,8 @@ export class TasksComponent implements OnInit {
 
   ngOnInit(): void {}
   
+
+  @Input() fname:string;
   name = '';
   productForm: FormGroup;
 
@@ -65,6 +67,7 @@ public image : any = ""
 public data : any 
 public show:any= ""
 public names :any =  ["karthik", "sai", "ganesh"]
+
 
 
 updateName(){
